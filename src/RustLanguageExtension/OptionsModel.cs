@@ -21,7 +21,7 @@ namespace RustLanguageExtension
     {
         private const string SettingsCollection = "RustLanguageExtension";
 
-        private const string ToolchainDefault = "nightly";
+        private const string ToolchainDefault = "stable";
         private const string ToolchainProperty = "Toolchain";
 
         private const string RustupPathDefault = "";
