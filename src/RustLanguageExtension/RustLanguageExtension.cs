@@ -132,7 +132,7 @@ namespace RustLanguageExtension
                 || !await rustup.HasComponentAsync("rust-analysis", toolchain)
                 || !await rustup.HasComponentAsync("rust-src", toolchain))
             {
-                if (!await this.InstallComponentsAsync(rustup, toolchain, "rls-preview", "rust-analysis", "rust-src"))
+                if (!await this.InstallComponentsAsync(rustup, toolchain, "rls", "rust-analysis", "rust-src"))
                 {
                     var infoBar = new VsUtilities.InfoBar("could not install one of the required rls components");
                     await VsUtilities.ShowInfoBarAsync(infoBar, this.serviceProvider);
